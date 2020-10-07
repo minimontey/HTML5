@@ -99,6 +99,17 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #D3D3D3;
 }
+	
+@media (max-width: 600px) {
+  .wrapper  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right'
+	  'form form form form form form form '
+      'footer footer footer footer footer footer';
+  }
 </style>
 </head>
 
