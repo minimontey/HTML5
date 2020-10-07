@@ -7,6 +7,9 @@
 	
 <title>Japanese Animated Movies To Watch</title>
 <style>
+
+body{background-color: black;
+	}
 {
   box-sizing: border-box;
 }
@@ -27,7 +30,7 @@
   grid-template-areas: 
     'header header header header header header' 
     'left left middle middle right right' 
-	'form form form formdesign formdesign formdesign'
+	'.... ... form form .... ....'
     'footer footer footer footer footer footer';
 } 
 
@@ -59,21 +62,17 @@
 	
 .form{
 	grid-area: form;
-	background-color: #272727;
+	text-align: center;
+	background-color: #black;
 	color: floralwhite;
 	font-family: neue-aachen-pro, sans-serif;
-	font-weight: 200;
+	font-weight: 400;
 	font-style: normal;
-	}
-.formdesign{
-	grid-area: formdesign;
-	background-color: #272727;
 	}
 
 .footer {
   grid-area: footer;
 }
-
 	
 input[type=text], select, textarea {
   width: 100%; 
@@ -101,17 +100,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #D3D3D3;
 }
-
-@media (max-width: 600px) {
-  .wrapper  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-	  'form form form form form form'
-      'footer footer footer footer footer footer';
-  }
 </style>
 </head>
 
@@ -197,7 +185,6 @@ input[type=submit]:hover {
 
   	</form>
   </div>
-  <div class="formdesign"></div>
   <div class="footer">
   <p>Created By Maria Montemayor</p>
   </div>
