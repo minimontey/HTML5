@@ -27,7 +27,7 @@
   grid-template-areas: 
     'header header header header header header' 
     'left left middle middle right right' 
-	'form form form form form form'
+	'form form form formdesign formdesign formdesign'
     'footer footer footer footer footer footer';
 } 
 
@@ -56,17 +56,24 @@
 .right {
   grid-area: right;
 }
+	
+.form{
+	grid-area: form;
+	background-color: #272727;
+	color: floralwhite;
+	font-family: neue-aachen-pro, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	}
+.formdesign{
+	grid-area: formdesign;
+	background-color: #272727;
+	}
 
 .footer {
   grid-area: footer;
 }
 
-.form{
-	grif-area: form;
-	text-align: center;
-	background-color: #272727;
-	color: antiquewhite;
-	}
 	
 input[type=text], select, textarea {
   width: 100%; 
@@ -76,25 +83,31 @@ input[type=text], select, textarea {
   box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
-  resize: vertical 
+  resize: vertical;
 }
 
 input[type=submit] {
-  background-color: antiquewhite;
+  background-color: floralwhite;
   color: #272727;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 input[type=submit]:hover {
   background-color: #D3D3D3;
 }
+	
 </style>
 </head>
+
 <link href="style.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/cul6rcy.css">
+
 <body>	
 <div class="wrapper">
   <div class="header">
@@ -158,24 +171,23 @@ input[type=submit]:hover {
 	  </iframe>
   </div>
   <div class="form">
+	<h2>Have a movie suggestion? Let me know down below!</h2>
 	<form action="action_page.php">
 
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
 	
 	<label for="email">E-mail Address</label>
-    <input type="text" id="email" name="E-Mail Address" placeholder="contact@furryfriends.com">
+    <input type="text" id="email" name="E-Mail Address" placeholder="abc123@gmail.com">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Ask Us Your Questions!" style="height:200px"></textarea>
+    <label for="movie">Movie Suggestion</label>
+    <textarea id="movie" name="movie" placeholder="Tell me your movie suggestions!" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
 
-  </form>
-  </div>  
+  	</form>
+  </div>
+  <div class="formdesign"></div>
   <div class="footer">
   <p>Created By Maria Montemayor</p>
   </div>
